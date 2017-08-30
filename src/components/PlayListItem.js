@@ -6,6 +6,12 @@ class PlayListItem extends Component {
     return (
       <div className="PlayListItem">
         <h1> PlayListItem</h1>
+        <ul>
+          <li>one</li>
+          <li>one</li>
+          <li>one</li>
+          <li>one</li>
+        </ul>
       </div>
     );
   }

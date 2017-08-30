@@ -12,8 +12,8 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar/>
-        <PlayList/>
         <PlayListForm/>
+        <PlayList/>
         <PlayListItem/>
       </div>
     );

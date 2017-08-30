@@ -1,5 +1,12 @@
+* {
+  background-color: rgb(61, 61, 61);
+  color: white;
+  justify-content: center;
+}
+
 .App {
   text-align: center;
+  margin: 15px;
 }
 
 .App-logo {
@@ -21,4 +28,9 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+.NavBar h1 {
+  background-color: rgba(25, 125, 205, 0.5);
+  text-align: center;
+  line-height: 4rem;
 }
