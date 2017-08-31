@@ -1,41 +1,41 @@
 import React, { Component } from 'react';
-
-//******************************************************************************
-//******************************************************************************
-//copy and paste into componentDidMount in your PlayList component.
-componentDidMount (props) {
-  fetch('https://tiny-lasagna-server.herokuapp.com/collections/playlisting').then(results => {
-        return results.json();
-      }).then(data => {
-        this.setState({songs: data});
-        console.log("state", this.state.songs);
-      })
-}
-
-fetch('https://tiny-lasagna-server.herokuapp.com/collections/playlisting').then(results => {
-      return results.json();
-    }).then(data => {
-      this.setState({songs: data});
-      console.log("state", this.state.songs);
-    })
-
-
-//Also in your PlayList component you should have a function that manually updates
-//the playlist when a user presses a button. Use the following "fetchData" function
-//to manually update your playlist.
-
-fetchData = (e) => {
-    e.preventDefault();
-    fetch('https://tiny-lasagna-server.herokuapp.com/collections/playlisting').then(results => {
-      return results.json();
-    }).then(data => {
-      this.setState({songs: data});
-    })
-  }
-
-  //In your PlayListForm component you should have a addToList function that happens
-  //when the form is submitted.
-  //This expression or method (dependin on the syntax you choose) will be comparable to this:
+// 
+// //******************************************************************************
+// //******************************************************************************
+// //copy and paste into componentDidMount in your PlayList component.
+// componentDidMount (props) {
+//   fetch('https://tiny-lasagna-server.herokuapp.com/collections/playlisting').then(results => {
+//         return results.json();
+//       }).then(data => {
+//         this.setState({songs: data});
+//         console.log("state", this.state.songs);
+//       })
+// }
+//
+// fetch('https://tiny-lasagna-server.herokuapp.com/collections/playlisting').then(results => {
+//       return results.json();
+//     }).then(data => {
+//       this.setState({songs: data});
+//       console.log("state", this.state.songs);
+//     })
+//
+//
+// //Also in your PlayList component you should have a function that manually updates
+// //the playlist when a user presses a button. Use the following "fetchData" function
+// //to manually update your playlist.
+//
+// fetchData = (e) => {
+//     e.preventDefault();
+//     fetch('https://tiny-lasagna-server.herokuapp.com/collections/playlisting').then(results => {
+//       return results.json();
+//     }).then(data => {
+//       this.setState({songs: data});
+//     })
+//   }
+//
+//   //In your PlayListForm component you should have a addToList function that happens
+//   //when the form is submitted.
+//   //This expression or method (dependin on the syntax you choose) will be comparable to this:
 
   addToList = (e) => {
       e.preventDefault();
