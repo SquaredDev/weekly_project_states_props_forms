@@ -34,3 +34,7 @@
   text-align: center;
   line-height: 4rem;
 }
+
+.PlayListItem {
+  width: 40%;
+}
